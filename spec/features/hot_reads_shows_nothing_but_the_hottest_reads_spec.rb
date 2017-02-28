@@ -4,7 +4,8 @@ describe "user visits the page" do
   scenario "and sees no links because there aren't any" do
     visit "/"
     
-    expect(page).to have_content("🔥🔥🔥HOT READS🔥🔥🔥")
+    expect(page).to have_content("🔥🔥🔥🔥🔥🔥🔥🔥🔥HOT READS mk2🔥🔥🔥🔥🔥🔥🔥🔥🔥")
+    expect(page).to have_content("🔥🔥🔥🔥🔥🔥🔥🔥🔥~~ read hotter ~~🔥🔥🔥🔥🔥🔥🔥🔥🔥")
     expect(page).to have_content("Top 10 Hottest Reads")
   end
 
@@ -12,7 +13,7 @@ describe "user visits the page" do
     link = Fabricate(:link)
     visit "/"
     
-    expect(page).to have_content("🔥🔥🔥HOT READS🔥🔥🔥")
+    expect(page).to have_content("🔥🔥🔥🔥🔥🔥🔥🔥🔥HOT READS mk2🔥🔥🔥🔥🔥🔥🔥🔥🔥")
     expect(page).to have_content("Top 10 Hottest Reads")
     expect(page).to have_content(link.url)
     expect(page).to have_content(link.read_count)
@@ -31,7 +32,7 @@ describe "user visits the page" do
     link_10 = Fabricate(:link, url: "https://www.zombo10.com")
     visit "/"
     
-    expect(page).to have_content("🔥🔥🔥HOT READS🔥🔥🔥")
+    expect(page).to have_content("🔥🔥🔥🔥🔥🔥🔥🔥🔥HOT READS mk2🔥🔥🔥🔥🔥🔥🔥🔥🔥")
     expect(page).to have_content("Top 10 Hottest Reads")
     expect(page).to have_content(link_1.url)
     expect(page).to have_content(link_2.read_count)
@@ -55,7 +56,7 @@ describe "user visits the page" do
     link_12 = Fabricate(:link, url: "https://www.zombo12.com")
     visit "/"
     
-    expect(page).to have_content("🔥🔥🔥HOT READS🔥🔥🔥")
+    expect(page).to have_content("🔥🔥🔥🔥🔥🔥🔥🔥🔥HOT READS mk2🔥🔥🔥🔥🔥🔥🔥🔥🔥")
     expect(page).to have_content("Top 10 Hottest Reads")
     expect(page).to have_content(link_1.url)
     expect(page).to have_content(link_2.read_count)

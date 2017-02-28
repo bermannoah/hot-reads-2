@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  font-weight: bold !important;
+  background-color: #fff;
+ -webkit-animation: color_change 1.5s infinite alternate;
+ -moz-animation: color_change 1.5s infinite alternate;
+ -ms-animation: color_change 1.5s infinite alternate;
+ -o-animation: color_change 1.5s infinite alternate;
+ animation: color_change 1.5s infinite alternate;
+ font-family: 'Roboto', sans-serif;
+}
+ 
+h2 {
+  text-align: center !important;
+  font-weight: bold !important;
+}
+
+table {
+  text-align: center !important;
+  font-weight: bold !important;
+  display: flex;
+  justify-content: center;
+}
+ /* Keyframes */
+
+@-webkit-keyframes color_change {
+  from {color: #ff3300; }
+  to {color: #ff9900; }
+}
+@-moz-keyframes color_change {
+  from {color: #ff3300; }
+  to {color: #ff9900; }
+}
+@-ms-keyframes color_change {
+  from {color: #ff3300; }
+  to {color: #ff9900; }
+}
+@-o-keyframes color_change {
+  from {color: #ff3300; }
+  to {color: #ff9900; }
+}
+@keyframes color_change {
+  from {color: #ff3300; }
+  to {color: #ff9900; }
+}

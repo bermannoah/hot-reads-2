@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   namespace :api do
     namespace :v1 do
-      resources :links, only: [:create, :update]
+      resources :links, only: [:index, :create, :update]
       post "/links", to: 'links#create'
     end
   end

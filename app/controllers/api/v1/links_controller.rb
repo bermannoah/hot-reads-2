@@ -3,7 +3,6 @@ class Api::V1::LinksController < Api::V1::ApiController
   def index
     now = Time.now
     @links = Link.where(updated_at: (now - 24.hours)..Time.now).order(read_count: :DESC).limit(10)
-    binding.pry
     render json: @links
   end
   

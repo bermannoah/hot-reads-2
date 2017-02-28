@@ -1,6 +1,6 @@
 class LinksController < ApplicationController
   def index
     now = Time.now
-    @links = Link.where(updated_at: (now - 24.hours)..Time.now).order(read_count: :DESC).limit(10)
+    @hot_links = Link.get_from_url_lock_box
   end
 end

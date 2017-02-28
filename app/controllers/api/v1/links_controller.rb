@@ -1,4 +1,4 @@
-class Api::V1::LinksController < ApplicationController
+class Api::V1::LinksController < Api::V1::ApiController
   
   def create
     link = params["urlToSend"]

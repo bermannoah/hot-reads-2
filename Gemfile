@@ -20,6 +20,7 @@ gem 'sprockets-es6'
 gem 'validate_url'
 gem 'responders'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'rack-cors', :require => 'rack/cors'
 # gem 'bcrypt', '~> 3.1.7'
 
 # gem 'capistrano-rails', group: :development
